@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgroundColor</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        h1{
+            /* font-size: medium; */
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(190, 135, 54)
+        }
+            h1:hover{
+           /* background: linear-gradient(to right red,rgb(79, 7, 248),rgb(248, 7, 172),red,yellow); */
+           /* background: linear-gradient(to right, red,blue, rgb(248, 7, 172),red,yellow); */
+        }
+        #youtube, #instagram {
+            width : 15vw;
+            border-radius: 10px;
+                    
+        }
+        #FB{
+            width : 15vw;
+             
+        }
+        #instagram{
+            /* background: linear-gradient(to bottom, rgb(248, 7, 172),red,yellow ); */
+            border-radius: 80px;
+            width : 20vw;
+        }
+        button{ border: 0px;
+        border-radius: 20px;
+        border-width: 60;
+        color: white;
+        background-color: rgb(190, 135, 54);
+        }
+        .YTBtn, .instabtn {
+            font-size: large;
+        }
+        .FBBtn{
+            font-size: 17px;
+        }
+        .YTBtn:hover{
+            background-color: red;
+        }
+        .FBBtn:hover{
+            background-color: rgb(79, 7, 248);
+        }
+        .instabtn:hover{
+            background: linear-gradient(to right, rgb(248, 7, 172),red,yellow);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Click on the button:</h1>
+    <div class="container">
+    <div>
+    <img id= "youtube" src="./Media/YoutubeLogo.png">
+    <button class= "YTBtn"onclick = "redBg()">youtube</button>
+    </div>
+    <div>
+        <img id="FB" src="./Media/FaceBook.png">
+        <button class= "FBBtn"onclick = "blueBg()">FaceBook</button>
+        </div>
+        <div>
+            <img id="instagram" src="./Media/instaGram.png">
+            <button class= "instabtn" onclick = "instacolor()">instagram</button>  
+        </div>
+    </div>
+</body>
+<script>
+    function redBg(){document.getElementById('youtube').style.backgroundColor="red"; }
+    function blueBg(){document.getElementById('FB').style.backgroundColor=" rgb(79, 7, 248)";}
+    function instacolor(){document.getElementById('instagram').style.background="linear-gradient(to bottom, rgb(248, 7, 172),red,yellow )"; }
+</script>
+</html>
